@@ -8,12 +8,12 @@ extensions supportées :
 
 Images : .png , .jpg , .jpeg , .gif
 
-Videos : mp4 , .webm , .avi
+Videos : .mp4 , .webm , .avi
 
 Executables : .exe , .msi
 
-Archives : = .rar , .zip
+Archives : .rar , .zip
 
 Audios : .mp3 , .wav , .aac , .ogg
 
-Documents = .PDF , .pdf , .txt , .html , .doc , .docx
+Documents : .PDF , .pdf , .txt , .html , .doc , .docx
