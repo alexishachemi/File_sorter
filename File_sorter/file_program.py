@@ -18,6 +18,8 @@ archive_ext = [".rar", ".zip"]
 audio_ext = [".mp3", ".wav", ".aac", ".ogg"]
 document_ext = [".PDF",".pdf", ".txt", ".html", ".doc", ".docx" ]
 
+ext_list = [image_ext, video_ext, executable_ext, archive_ext, audio_ext, document_ext]
+
 # Définition des dossiers où l'on rangera les fichiers
 file_dir = [".Images", ".Videos", ".Executables", ".Archives", ".Audios", ".Documents"]
 
@@ -39,8 +41,6 @@ def tidy_file(ext, dir):
             copy(fpath(files), fpath(file_dir[file_dir.index(dir)]))
             os.remove(fpath(files))
 
-tidy_file(image_ext, ".Images")
-tidy_file(video_ext, ".Videos")
-tidy_file(executable_ext, ".Executables")
-tidy_file(archive_ext, ".Archives")
-tidy_file(audio_ext, ".Audios")
+# Triage des éléments supportés
+for (ext,dirr) in zip(ext_list, file_dir):
+    tidy_file(ext,dirr)
